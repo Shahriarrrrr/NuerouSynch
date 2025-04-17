@@ -1,0 +1,15 @@
+/groups/	GET	List all groups (or filtered if you override get_queryset)
+/groups/	POST	Create a group
+/groups/{id}/	GET	View group details
+/groups/{id}/	PUT/PATCH	Update group (creator only)
+/groups/{id}/	DELETE	Delete group (creator only)
+
+
+Endpoint	Method	Description
+/group-requests/	GET	List all requests (filterable)
+/group-requests/	POST	Request to join a group
+/group-requests/{id}/	PATCH	Approve/Decline request (only by group creator)
+
+
+
+http://127.0.0.1:8000/group/api/group-requests/1/

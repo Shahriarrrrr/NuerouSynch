@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'accounts',
     'publicationpost',
+    'rest_framework.authtoken',
+    'group',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +136,20 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 CORS_ALLOW_ALL_ORIGINS = True
+
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+    # 'DEFAULT_PERMISSION_CLASSES': [
+    #     'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+    # ],
+}
+
+
+AUTHENTICATION_BACKENDS = [
+    'accounts.backends.EmailBackend',
+    'django.contrib.auth.backends.ModelBackend',  # You can keep the default backend as a fallback
+]
