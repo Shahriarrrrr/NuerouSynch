@@ -13,3 +13,8 @@ Endpoint	Method	Description
 
 
 http://127.0.0.1:8000/group/api/group-requests/1/
+
+http://127.0.0.1:8000/group/api/group-requests/ (To request to join) body:  {
+    "group":2
+}
+http://127.0.0.1:8000/group/api/group-requests/1/update-status/ POST (ID here is the request id) TO UPDATE STATUS 

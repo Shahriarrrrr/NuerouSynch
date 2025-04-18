@@ -25,3 +25,8 @@ class GroupJoinRequestSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         validated_data['requested_by'] = self.context['request'].user
         return super().create(validated_data)
+
+class GroupJoinRequestStatusUpdateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GroupJoinRequest
+        fields = ['status']  # Only allow status to be updated

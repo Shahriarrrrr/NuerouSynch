@@ -2,10 +2,10 @@ from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from group.models import Group, GroupJoinRequest
-from .serializers import GroupSerializer, GroupJoinRequestSerializer
+from .serializers import GroupSerializer, GroupJoinRequestSerializer, GroupJoinRequestStatusUpdateSerializer
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .permissions import IsAuthorOrReadOnly
-
+from django.db.models import Q
 
 
 class GroupViewSet(viewsets.ModelViewSet):
@@ -31,9 +31,16 @@ class GroupJoinRequestViewSet(viewsets.ModelViewSet):
         serializer.save(requested_by=self.request.user)
 
     def get_queryset(self):
+        user = self.request.user
         if self.action == 'list':
-            return GroupJoinRequest.objects.filter(requested_by=self.request.user)
+            if user.is_authenticated:
+                return GroupJoinRequest.objects.filter(
+                    Q(requested_by=user) |
+                    Q(group__created_by=user)
+                ).distinct()
+            return GroupJoinRequest.objects.none()
         return super().get_queryset()
+
 
     @action(detail=True, methods=['patch'], url_path='update-status')
     def update_status(self, request, pk=None):
