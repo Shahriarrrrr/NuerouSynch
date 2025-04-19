@@ -7,10 +7,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: url(/FrontendNueroSynch/assets/books.jpg);
-    background-size: 100vh;
-    height: 100vh;
-    width: 100vw;
+    /* background: url(/FrontendNueroSynch/assets/books.jpg); */
+    background: url(/FrontendNueroSynch/assets/uiu.jpg);
+    background-repeat: no-repeat;
+
+    background-size: auto;
+    height: auto;
+    width: auto;
     /* background-color: #f8f8f8; */
 }
 
@@ -43,12 +46,12 @@ header .logo img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 20px;
+    padding: 0px 20px;
 }
 
 .form-container {
     background-color: #f2ebeb;
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;

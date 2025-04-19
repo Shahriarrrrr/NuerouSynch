@@ -25,14 +25,26 @@
             <form action="/submit-signup" method="POST">
                 <!-- ID Field -->
                 <div class="input-field">
-                    <label for="name">ID</label>
+                    <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
                 </div>
                 
+                <!-- Phone-Number -->
+                <div class="input-field">
+                    <label for="phone">Phone number</label>
+                    <input type="email" id="phone" name="phone" placeholder="Enter your Phone number" required>
+                </div>
+
                 <!-- Email Field -->
                 <div class="input-field">
                     <label for="email">Email address</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- ID -->
+                <div class="input-field">
+                    <label for="id">ID</label>
+                    <input type="text" id="id" name="id" placeholder="Enter your ID or Initials" required>
                 </div>
                 
                 <!-- Password Field -->
@@ -45,10 +57,9 @@
                 <div class="input-field">
                     <label for="department">Department</label>
                     <select id="department" name="department" required>
-                        <option value="BSCSE">BSCSE</option>
-                        <option value="EE">Electrical and Electronics Engineering</option>
-                        <option value="DS">Data Science</option>
-                        <option value="Finance">Finance</option>
+                        <option value="CSE">Computer Science & Engineering</option>
+                        <option value="EEE">Electrical and Electronics Engineering</option>
+                        <option value="CIVIL">Civil Engineering</option>
                     </select>
                 </div>
 
@@ -58,7 +69,7 @@
 
             <!-- Link to Sign In -->
             <div class="signin-link">
-                <p>Have an account? <a href="signin.html">Sign In</a></p>
+                <p>Have an account? <a href="/FrontendNueroSynch/UserLogin.html">Sign In</a></p>
             </div>
         </div>
     </section>
@@ -97,5 +108,6 @@
             <p>&copy; 2008-2025 NeuroSync. All rights reserved.</p>
         </div>
     </footer>-->
+    <script></script>
 </body>
 </html>

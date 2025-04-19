@@ -3,26 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up - NeuroSync</title>
     <link rel="stylesheet" href="UserRegister.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="hero">
-        <div id="Logo">
-            <img id="logo-img" src="assets/uiulogo.png" alt="">
-            <h1>NueroSynch</h1>
-        </div>
-        <div id="Registration">
-            <form action="">
-                <label for="name">Full Name</label><br>
-                <input type="text" name="" id="">
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div id="logs" class="logo">
+                <img src="/FrontendNueroSynch/assets/uiulogo2.png" alt="NeuroSync Logo">
+                <h2>Nuero Synch</h2>
+            </div>
+        </nav>
+    </header>
 
+    <!-- Sign Up Form -->
+    <section id="signup-form">
+        <div class="form-container">
+            <h2>Get Started Now</h2>
+            <form action="/submit-signup" method="POST">
+                <!-- ID Field -->
+                <div class="input-field">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                
+                <!-- Phone-Number -->
+                <div class="input-field">
+                    <label for="phone">Phone number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your Phone number" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="input-field">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- ID -->
+                <div class="input-field">
+                    <label for="id">ID</label>
+                    <input type="text" id="id" name="id" placeholder="Enter your ID or Initials" required>
+                </div>
+                
+                <!-- Password Field -->
+                <div class="input-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                
+                <!-- Department Field -->
+                <div class="input-field">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="CSE">Computer Science & Engineering</option>
+                        <option value="EEE">Electrical and Electronics Engineering</option>
+                        <option value="CIVIL">Civil Engineering</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Sign Up</button>
             </form>
+
+            <!-- Link to Sign In -->
+            <div class="signin-link">
+                <p>Have an account? <a href="/FrontendNueroSynch/UserLogin.html">Sign In</a></p>
+            </div>
         </div>
     </section>
 
-
-
-    <script src = "UserRegister.js"></script>
+    <!-- Footer Section -->
+    <!--<footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="NeuroSync Logo">
+            </div>
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Business Solutions</h3>
+                <ul>
+                    <li><a href="marketing.html">Marketing Solutions</a></li>
+                    <li><a href="recruitment.html">Scientific Recruitment</a></li>
+                    <li><a href="publisher.html">Publisher Solutions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2008-2025 NeuroSync. All rights reserved.</p>
+        </div>
+    </footer>-->
+    <script src="UserRegister.js"></script>
 </body>
 </html>
