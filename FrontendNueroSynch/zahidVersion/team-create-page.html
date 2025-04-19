@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Create Page - NeuroSync</title>
+    <link rel="stylesheet" href="team-create-page.css">
+</head>
+<body>
+    <!-- Navbar Section (left side) -->
+    <div id="navbar">
+        <div class="navbar-header">
+            <img src="assets/logo.png" alt="NeuroSync Logo" class="logo">
+            <p>Hello, Shahriar</p>
+            <img src="assets/user-profile.jpg" alt="User Profile" class="profile-pic">
+        </div>
+        <div class="navbar-menu">
+            <button class="nav-btn">Home</button>
+            <button class="nav-btn">Messages</button>
+            <button class="nav-btn">Teams</button>
+            <button class="nav-btn">Interests</button>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <section id="main-content">
+        <div class="team-container">
+            <div class="team-header">
+                <h2>Team Titans</h2>
+                <p><strong>Research topic:</strong> Car crash safety systems</p>
+                <p><strong>Members:</strong> 6</p>
+                <div class="team-members">
+                    <img src="assets/member1.jpg" alt="Team Member 1">
+                    <img src="assets/member2.jpg" alt="Team Member 2">
+                    <img src="assets/member3.jpg" alt="Team Member 3">
+                    <img src="assets/member4.jpg" alt="Team Member 4">
+                </div>
+                <button class="message-btn">Message</button>
+            </div>
+
+            <div class="task-creation">
+                <h3>Create Task</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="task-title">Title:</label>
+                        <input type="text" id="task-title" name="task-title" placeholder="Enter task title here">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-time">Time:</label>
+                        <input type="date" id="task-time" name="task-time">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assigned-to">Assigned to:</label>
+                        <select id="assigned-to" name="assigned-to">
+                            <option value="not-selected">Not Selected</option>
+                            <option value="member1">Dr. Dewan Farid</option>
+                            <option value="member2">Dr. Nurul Huda</option>
+                            <option value="member3">Shahriar</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="create-btn">Create</button>
+                </form>
+            </div>
+
+            <div class="task-list">
+                <h3>Assigned Tasks</h3>
+
+                <!-- Task 1 -->
+                <div class="task-card">
+                    <div class="task-info">
+                        <h4>Search Crash data of Dhaka</h4>
+                        <p>Time Remains: 2 hours</p>
+                        <p><strong>Assigned to:</strong> Dr. Dewan Farid</p>
+                    </div>
+                    <button class="submit-btn">Submit</button>
+                </div>
+
+                <!-- Task 2 -->
+                <div class="task-card">
+                    <div class="task-info">
+                        <h4>Search Crash data of Dhaka</h4>
+                        <p>Time Remains: 2 hours</p>
+                        <p><strong>Assigned to:</strong> Dr. Nurul Huda</p>
+                    </div>
+                    <button class="submit-btn">Submit</button>
+                </div>
+
+                <!-- Task 3 -->
+                <div class="task-card">
+                    <div class="task-info">
+                        <h4>Search Crash data of Dhaka</h4>
+                        <p>Time Remains: 10 Days</p>
+                        <p><strong>Assigned to:</strong> Shahriar</p>
+                    </div>
+                    <button class="submit-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="NeuroSync Logo">
+            </div>
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Business Solutions</h3>
+                <ul>
+                    <li><a href="marketing.html">Marketing Solutions</a></li>
+                    <li><a href="recruitment.html">Scientific Recruitment</a></li>
+                    <li><a href="publisher.html">Publisher Solutions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2008-2025 NeuroSync. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

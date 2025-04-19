@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+/* Sidebar Section */
+#sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    color: white;
+}
+
+#sidebar .sidebar-header {
+    text-align: center;
+}
+
+#sidebar .logo {
+    width: 50px;
+}
+
+#sidebar .profile-pic {
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#sidebar .sidebar-menu {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.menu-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-btn:hover {
+    background-color: #555;
+}
+
+/* Main Content Section */
+#main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#search {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.projects-container {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background-color: #e65c00;
+}
+
+.project-details {
+    margin-top: 10px;
+    color: #555;
+}
+
+.project-actions button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-actions button:hover {
+    background-color: #555;
+}
+
+/* Calendar Section */
+#calendar {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.calendar-row span {
+    width: 30px;
+    text-align: center;
+}
+
+.footer-content {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer .footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+}
+
+footer .footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer .footer-links ul li a:hover {
+    color: white;
+}
+
+footer .footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+}

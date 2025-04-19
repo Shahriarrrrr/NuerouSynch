@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+/* Navbar */
+#navbar {
+    width: 220px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+#navbar .logo {
+    width: 50px;
+}
+
+#navbar .profile-pic {
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.navbar-menu .nav-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navbar-menu .nav-btn:hover {
+    background-color: #555;
+}
+
+/* Main Content Section */
+#main-content {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-left {
+    width: 60%;
+}
+
+.profile-right {
+    width: 35%;
+    padding: 20px;
+}
+
+.profile-left h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.profile-left p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.profile-section {
+    margin-top: 20px;
+}
+
+.profile-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.interests .interest-btn {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.interests .interest-btn:hover {
+    background-color: #e65c00;
+}
+
+.profile-right .profile-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section .edit-btn {
+    padding: 8px 15px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-section .edit-btn:hover {
+    background-color: #e65c00;
+}
+
+.profile-section .see-more-btn {
+    color: #ff6600;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-logo img {
+    width: 50px;
+}
+
+footer .footer-links {
+    flex: 1;
+}
+
+footer .footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer .footer-links ul li a:hover {
+    color: white;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+}

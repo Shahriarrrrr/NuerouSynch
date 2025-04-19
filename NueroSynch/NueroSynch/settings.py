@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'publicationpost',
     'rest_framework.authtoken',
     'group',
+    'django_filters',
 ]
 
 MIDDLEWARE = [

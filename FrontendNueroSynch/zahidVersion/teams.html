@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams - NeuroSync</title>
+    <link rel="stylesheet" href="teams.css">
+</head>
+<body>
+    <!-- Sidebar Section -->
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <img src="assets/logo.png" alt="NeuroSync Logo" class="logo">
+            <p>Hello, Shahriar</p>
+            <img src="assets/user-profile.jpg" alt="User Profile" class="profile-pic">
+        </div>
+        <div class="sidebar-menu">
+            <button class="menu-btn">Home</button>
+            <button class="menu-btn">Messages</button>
+            <button class="menu-btn">Teams</button>
+            <button class="menu-btn">Interests</button>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <section id="main-content">
+        <h2>Create Team</h2>
+        <div class="create-team-form">
+            <form action="/create-team" method="POST">
+                <div class="input-field">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" placeholder="Enter team title" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="vacancy">Vacancy:</label>
+                    <input type="number" id="vacancy" name="vacancy" placeholder="Enter number of vacancies" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="members">Add Members:</label>
+                    <input type="text" id="members" name="members" placeholder="Add member's name" required>
+                    <button type="button" id="add-member" class="add-btn">+</button>
+                </div>
+
+                <div class="input-field">
+                    <label for="duration">Duration:</label>
+                    <input type="text" id="duration" name="duration" placeholder="Enter project duration" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="start-date">Starting Date:</label>
+                    <input type="date" id="start-date" name="start-date" required>
+                </div>
+
+                <div class="input-field">
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" placeholder="Enter your comment about the project"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Create</button>
+            </form>
+        </div>
+
+        <!-- Group Requests Section -->
+        <h2>Group Requests</h2>
+        <div class="group-requests-container">
+            <div class="group-card">
+                <div class="group-header">
+                    <h3>Deep Residual Learning for Image Recognition</h3>
+                    <button class="view-btn">View</button>
+                </div>
+                <div class="group-details">
+                    <p>Vacancy: 2</p>
+                    <p>Members: Shahriar Khan (LEAD), Meghla Rahman</p>
+                    <p>Duration: 10-12 months</p>
+                    <p>Starting Date: 05 June 2025</p>
+                </div>
+                <div class="group-actions">
+                    <button class="join-btn">Join Request</button>
+                    <button class="message-btn">Message Team Lead</button>
+                    <button class="comment-btn">Comment</button>
+                </div>
+            </div>
+
+            <!-- Add more group cards as needed -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="NeuroSync Logo">
+            </div>
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Business Solutions</h3>
+                <ul>
+                    <li><a href="marketing.html">Marketing Solutions</a></li>
+                    <li><a href="recruitment.html">Scientific Recruitment</a></li>
+                    <li><a href="publisher.html">Publisher Solutions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2008-2025 NeuroSync. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

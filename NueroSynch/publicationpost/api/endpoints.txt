@@ -1,0 +1,3 @@
+GET /posts/ → Home page (all posts)
+
+GET /my-posts/ → Profile page (only logged-in user’s posts)

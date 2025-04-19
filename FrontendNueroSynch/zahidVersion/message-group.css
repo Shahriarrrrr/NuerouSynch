@@ -1,0 +1,260 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+/* Navbar (Left Sidebar) */
+#navbar {
+    width: 220px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+#navbar .logo {
+    width: 50px;
+}
+
+#navbar .profile-pic {
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.navbar-menu .nav-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navbar-menu .nav-btn:hover {
+    background-color: #555;
+}
+
+/* Main Content Section */
+#main-content {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    width: 100%;
+}
+
+.recent-chats {
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.chat-item:hover {
+    background-color: #f0f0f0;
+}
+
+.chat-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-name {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.last-message {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.message-time {
+    font-size: 10px;
+    color: #aaa;
+}
+
+/* Main Chat Box (Right part of the page) */
+.main-chat-box {
+    width: 70%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+.chat-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.chat-header h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.chat-header p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Message History */
+.message-history {
+    max-height: 400px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.message-item {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.message-item .chat-head {
+    margin-right: 10px;
+}
+
+.message-item .chat-head-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.message-item .message-text {
+    max-width: 70%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.message-item.self .message-text {
+    background-color: #ff6600;
+    color: white;
+    align-self: flex-end;
+}
+
+.message-item.others .message-text {
+    background-color: #f0f0f0;
+}
+
+.message-time {
+    font-size: 10px;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+/* Message Input */
+.message-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-input textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.send-btn {
+    width: 10%;
+    padding: 12px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background-color: #e65c00;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-logo img {
+    width: 50px;
+}
+
+footer .footer-links {
+    flex: 1;
+}
+
+footer .footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer .footer-links ul li a:hover {
+    color: white;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+footer .footer-bottom p {
+    margin: 0;
+}

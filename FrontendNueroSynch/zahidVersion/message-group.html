@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Chat - NeuroSync</title>
+    <link rel="stylesheet" href="message-group.css">
+</head>
+<body>
+    <!-- Navbar Section (left side) -->
+    <div id="navbar">
+        <div class="navbar-header">
+            <img src="assets/logo.png" alt="NeuroSync Logo" class="logo">
+            <p>Hello, Shahriar</p>
+            <img src="assets/user-profile.jpg" alt="User Profile" class="profile-pic">
+        </div>
+        <div class="navbar-menu">
+            <button class="nav-btn">Home</button>
+            <button class="nav-btn">Messages</button>
+            <button class="nav-btn">Teams</button>
+            <button class="nav-btn">Interests</button>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <section id="main-content">
+        <div class="content-container">
+            <!-- Middle Bar (Recent Chats) -->
+            <div class="recent-chats">
+                <div class="chat-item active">
+                    <img src="assets/chat1.jpg" alt="ALPR Group" class="chat-avatar">
+                    <div class="chat-details">
+                        <p class="chat-name">ALPR Group</p>
+                        <p class="last-message">Bubble wrap? <span class="message-time">2h ago</span></p>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <img src="assets/chat2.jpg" alt="Homeless" class="chat-avatar">
+                    <div class="chat-details">
+                        <p class="chat-name">Homeless</p>
+                        <p class="last-message">Sent a video.. <span class="message-time">4h ago</span></p>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <img src="assets/chat3.jpg" alt="H.m. Fayequzzaman Fahad" class="chat-avatar">
+                    <div class="chat-details">
+                        <p class="chat-name">H.m. Fayequzzaman Fahad</p>
+                        <p class="last-message">Aiccha <span class="message-time">11h ago</span></p>
+                    </div>
+                </div>
+                <!-- More chat items can be added here -->
+            </div>
+
+            <!-- Main Chat Box (Right part of the page) -->
+            <div class="main-chat-box">
+                <!-- Chat Header -->
+                <div class="chat-header">
+                    <h2>ALPR Group</h2>
+                    <p>Meghla Rahman, Shahriar Azam, MD Nurul Huda</p>
+                </div>
+
+                <!-- Chat Section -->
+                <div class="chat-container">
+                    <!-- Message History -->
+                    <div class="message-history">
+                        <div class="message-item others">
+                            <div class="chat-head">
+                                <img src="assets/profile1.jpg" alt="MD Nurul Huda" class="chat-head-img">
+                            </div>
+                            <div class="message-text">
+                                <p><strong>MD Nurul Huda:</strong> Is the paper ready?</p>
+                            </div>
+                            <div class="message-time">16:07</div>
+                        </div>
+
+                        <div class="message-item self">
+                            <div class="chat-head">
+                                <img src="assets/user-profile.jpg" alt="You" class="chat-head-img">
+                            </div>
+                            <div class="message-text">
+                                <p><strong>You:</strong> Yes, Sir. It’s almost done</p>
+                            </div>
+                            <div class="message-time">16:27</div>
+                        </div>
+
+                        <div class="message-item others">
+                            <div class="chat-head">
+                                <img src="assets/profile2.jpg" alt="Nahid Hossain" class="chat-head-img">
+                            </div>
+                            <div class="message-text">
+                                <p><strong>Nahid Hossain:</strong> Hope the designs are good this time . . .</p>
+                            </div>
+                            <div class="message-time">16:27</div>
+                        </div>
+
+                        <div class="message-item others">
+                            <div class="chat-head">
+                                <img src="assets/profile3.jpg" alt="MD Messi" class="chat-head-img">
+                            </div>
+                            <div class="message-text">
+                                <p><strong>MD Messi:</strong> Don’t do any blunders this time.</p>
+                            </div>
+                            <div class="message-time">18:35</div>
+                        </div>
+                    </div>
+
+                    <!-- Message Input Section -->
+                    <div class="message-input">
+                        <textarea placeholder="Write messages here"></textarea>
+                        <button class="send-btn">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="NeuroSync Logo">
+            </div>
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Business Solutions</h3>
+                <ul>
+                    <li><a href="marketing.html">Marketing Solutions</a></li>
+                    <li><a href="recruitment.html">Scientific Recruitment</a></li>
+                    <li><a href="publisher.html">Publisher Solutions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2008-2025 NeuroSync. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

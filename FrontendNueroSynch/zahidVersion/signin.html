@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - NeuroSync</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.png" alt="NeuroSync Logo">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sign In Form Section -->
+    <section id="signin-form">
+        <div class="form-container">
+            <h2>Welcome back!</h2>
+            <p>Enter your credentials to access your account</p>
+            <form action="/submit-signin" method="POST">
+                <!-- ID Field -->
+                <div class="input-field">
+                    <label for="email">ID</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <!-- Password Field -->
+                <div class="input-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                
+                <!-- Remember Me Checkbox -->
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember for 30 days</label>
+                    <a href="forgot-password.html" class="forgot-password">Forgot password?</a>
+                </div>
+                
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+            <!-- Social Sign In Buttons -->
+            <div class="social-signin">
+                <button class="google-btn">Sign in with Google</button>
+                <button class="apple-btn">Sign in with Apple</button>
+            </div>
+
+            <!-- Sign Up Link -->
+            <div class="signup-link">
+                <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="NeuroSync Logo">
+            </div>
+            <div class="footer-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Business Solutions</h3>
+                <ul>
+                    <li><a href="marketing.html">Marketing Solutions</a></li>
+                    <li><a href="recruitment.html">Scientific Recruitment</a></li>
+                    <li><a href="publisher.html">Publisher Solutions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2008-2025 NeuroSync. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
