@@ -7,8 +7,11 @@
   body {
     font-family: 'Segoe UI', sans-serif;
     background: #f8f9fa;
+    transition: opacity 0.5s ease;
   }
-  
+  body.fade-out {
+    opacity: 0;
+  }
   .container {
     display: flex;
     height: 100vh;
@@ -83,7 +86,7 @@
   }
   
   button[type="submit"] {
-    background-color: #e0a234;
+    background-color: #e65c00;
     color: white;
     border: none;
     padding: 12px;

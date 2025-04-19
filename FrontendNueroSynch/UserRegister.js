@@ -1,3 +1,6 @@
+window.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("fade-in");
+  });
 document.querySelector("form").addEventListener("submit", async function (e) {
     e.preventDefault(); // Prevent default form submission
 
@@ -31,19 +34,22 @@ document.querySelector("form").addEventListener("submit", async function (e) {
         const result = await response.json();
 
         if (response.ok) {
-            // Display a success message
+            // Show success message
             const formContainer = document.querySelector(".form-container");
             formContainer.innerHTML = `
                 <h2>🎉 Registration Successful!</h2>
                 <p>Redirecting to sign in...</p>
             `;
             formContainer.style.textAlign = "center";
-            formContainer.style.transition = "all 0.3s ease-in-out";
 
-            // Wait 2 seconds before redirect
+            // Add fade-out before redirect
             setTimeout(() => {
-                window.location.href = "/FrontendNueroSynch/UserLogin.html";
-            }, 2000);
+                document.body.classList.add("fade-out");
+            }, 1000);
+
+            setTimeout(() => {
+                window.location.href = "UserLogin.html";
+            }, 1500); // after fade-out is visible
         } else {
             alert("Registration failed: " + (result.detail || "Unknown error"));
         }
