@@ -6,62 +6,80 @@
 }
 
 body {
-    background-color: #efd8d8;
+    background-color: #ffffff;
     display: flex;
 }
 
-.sidebar {
-    width: 120px;
-    background-color: #e0e0e0;
-    height: 100vh;
-    padding: 20px 0;
+#home-logo{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.logo-container {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.logo {
-    width: 50px;
     height: 50px;
-}
-
-.profile-pic-container {
-    width: 80px;
-    height: 80px;
-    background-color: #f0a030;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
+    width: 50px;
+    background-color: #f6f6f6;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-.profile-pic-sm {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.nav-icon {
-    width: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+  #home-png{
     height: 30px;
-    margin: 15px 0;
-    opacity: 0.6;
-    cursor: pointer;
-}
-
+    width: 30px;
+  }
+  #nav-uiu{
+    height: 70px;
+    width: 70px;
+  }
+    .sidebar {
+      width: 120px;
+      background-color: #e0e0e0;
+      height: 100vh;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+  }
+  
+  .logo-container {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      margin-bottom: 10px;
+  }
+  
+  .logo {
+      width: 50px;
+      height: 50px;
+  }
+  
+  .profile-pic-container {
+      width: 80px;
+      height: 80px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+  }
+  
+  .profile-pic-sm {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+  
+  .nav-icon {
+      width: 30px;
+      height: 30px;
+      margin: 15px 0;
+      opacity: 0.6;
+      cursor: pointer;
+  }
+  
 .main-content {
     flex: 1;
     padding: 30px;

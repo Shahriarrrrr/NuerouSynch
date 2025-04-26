@@ -30,7 +30,7 @@ document.getElementById("loginform").addEventListener("submit", async function (
     document.body.classList.add("fade-out");
 
     setTimeout(() => {
-      window.location.href = "UserProfile.html";
+      window.location.href = "news-feed.html";
     }, 500);
   } catch (err) {
     document.getElementById("error").textContent = err.message;
